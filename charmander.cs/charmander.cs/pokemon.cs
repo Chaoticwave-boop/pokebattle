@@ -8,10 +8,10 @@ namespace poke
 {
     internal class pokemon
     {
-        public string name;
+        public string name = "charmander";
         public string type = "fire";
         public string weakness = "water";
-        public string pokename = "charmander";
+        public string pokename;
 
         public pokemon() { }
 
