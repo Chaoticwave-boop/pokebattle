@@ -16,19 +16,14 @@ class main
             Console.WriteLine("enter your charmanders name");
             string Pokename = Console.ReadLine();
 
-            pokemon charmander = new pokemon("charmander", "grass", "fire", Pokename);
+            pokemon charmander = new pokemon("charmander", "fire", "water", Pokename);
 
-            Console.WriteLine("pokename:" + charmander.pokename);
-            Console.WriteLine(charmander.name);
-            Console.WriteLine(charmander.strenght);
-            Console.WriteLine(charmander.weakness);
+            Console.WriteLine("pokename: " + charmander.pokename);
+            Console.WriteLine("name: " + charmander.name);
+            Console.WriteLine("type: " + charmander.type);
+            Console.WriteLine("weakness: " + charmander.weakness);
 
             Console.WriteLine("---------");
-
-            Console.WriteLine(bulbasaur.name);
-            Console.WriteLine(bulbasaur.strenght);
-            Console.WriteLine(bulbasaur.weakness);
-
 
             for (int i = 0; i < 10; i++)
             {

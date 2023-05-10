@@ -9,16 +9,16 @@ namespace poke
     internal class pokemon
     {
         public string name;
-        public string strenght = "fire";
+        public string type = "fire";
         public string weakness = "water";
         public string pokename = "charmander";
 
         public pokemon() { }
 
-        public pokemon(string name, string strenght, string weakness, string pokename)
+        public pokemon(string name, string type, string weakness, string pokename)
         {
             this.name = name;
-            this.strenght = strenght;
+            this.type = type;
             this.weakness = weakness;
             this.pokename = pokename;
         }
