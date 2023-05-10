@@ -1,0 +1,15 @@
+C:\Users\brens\source\repos\charmander.cs\charmander.cs\bin\Debug\net6.0\charmander.cs.exe
+C:\Users\brens\source\repos\charmander.cs\charmander.cs\bin\Debug\net6.0\charmander.cs.deps.json
+C:\Users\brens\source\repos\charmander.cs\charmander.cs\bin\Debug\net6.0\charmander.cs.runtimeconfig.json
+C:\Users\brens\source\repos\charmander.cs\charmander.cs\bin\Debug\net6.0\charmander.cs.dll
+C:\Users\brens\source\repos\charmander.cs\charmander.cs\bin\Debug\net6.0\charmander.cs.pdb
+C:\Users\brens\source\repos\charmander.cs\charmander.cs\obj\Debug\net6.0\charmander.cs.csproj.AssemblyReference.cache
+C:\Users\brens\source\repos\charmander.cs\charmander.cs\obj\Debug\net6.0\charmander.cs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brens\source\repos\charmander.cs\charmander.cs\obj\Debug\net6.0\charmander.cs.AssemblyInfoInputs.cache
+C:\Users\brens\source\repos\charmander.cs\charmander.cs\obj\Debug\net6.0\charmander.cs.AssemblyInfo.cs
+C:\Users\brens\source\repos\charmander.cs\charmander.cs\obj\Debug\net6.0\charmander.cs.csproj.CoreCompileInputs.cache
+C:\Users\brens\source\repos\charmander.cs\charmander.cs\obj\Debug\net6.0\charmander.cs.dll
+C:\Users\brens\source\repos\charmander.cs\charmander.cs\obj\Debug\net6.0\refint\charmander.cs.dll
+C:\Users\brens\source\repos\charmander.cs\charmander.cs\obj\Debug\net6.0\charmander.cs.pdb
+C:\Users\brens\source\repos\charmander.cs\charmander.cs\obj\Debug\net6.0\charmander.cs.genruntimeconfig.cache
+C:\Users\brens\source\repos\charmander.cs\charmander.cs\obj\Debug\net6.0\ref\charmander.cs.dll
