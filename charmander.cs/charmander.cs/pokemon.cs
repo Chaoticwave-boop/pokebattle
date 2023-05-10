@@ -23,4 +23,24 @@ namespace poke
             this.pokename = pokename;
         }
     }
+
+    internal class pokeball
+    {
+        public string name = "Pokeball";
+        public string pokename = "";
+        public string content = "charmander";
+        public bool open = false
+        
+        public pokeball() { }
+
+        public pokeball(string name,string pokename ,string content, bool open)
+        {
+            this.name = name;
+            this.pokename = pokename;
+            this.content= content;
+            this.open = open;
+           
+        }
+    }
+
 }
