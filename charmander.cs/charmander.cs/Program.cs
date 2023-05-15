@@ -28,12 +28,12 @@ class main
 
 
             List<Pokeball> RivalContent = new List<Pokeball>() {
-                  new Pokeball("ultraball", new Pokemon("charmander", "fire", "grass", "steve")),
-                  new Pokeball("greatball", new Pokemon("charmeleon", "fire", "grass", "damian")),
-                  new Pokeball("pokeball",  new Pokemon("Charizard", "fire", "grass", "sith")),
-                  new Pokeball("greatball", new Pokemon("torchick", "fire", "grass", "Nugget")),
-                  new Pokeball("ultraball", new Pokemon("combusken", "fire", "grass", "drumstick")),
-                  new Pokeball("ultraball", new Pokemon("blaziken", "fire", "grass", "rotisserie")),
+                  new Pokeball("ultraball", new Pokemon("charmander", "fire", "water", "steve")),
+                  new Pokeball("greatball", new Pokemon("charmeleon", "fire", "water", "damian")),
+                  new Pokeball("pokeball",  new Pokemon("Charizard", "fire", "water", "sith")),
+                  new Pokeball("greatball", new Pokemon("torchick", "fire", "water", "Nugget")),
+                  new Pokeball("ultraball", new Pokemon("combusken", "fire", "water", "drumstick")),
+                  new Pokeball("ultraball", new Pokemon("blaziken", "fire", "water", "rotisserie")),
             };
 
             Trainer Rival = new Trainer(Rivalname, RivalContent);
