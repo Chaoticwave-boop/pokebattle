@@ -17,12 +17,6 @@ class main
             Console.WriteLine("enter your rivals name");
             string Rivalname = Console.ReadLine();
 
-
-            if (Rivalname == "exit" + "" || UserName == "exit" + "")
-            {
-                break;
-            }
-
             List<Pokeball> UserContent = new List<Pokeball>() {
                   new Pokeball("ultraball", new Pokemon("Umbreon", "dark", "fighting", "Grim")),
                   new Pokeball("greatball", new Pokemon("Gengar", "ghost", "dark", "JackTheRipper")),
@@ -62,6 +56,13 @@ class main
                 Console.WriteLine(UserName + " withdrew " + User.belt[i].pokemon.name);
             }
 
+            Console.WriteLine("Play again? yes or no");
+            string Continue = Console.ReadLine();
+
+            if (Continue == "no" + "" || Continue == "exit" + "")
+            {
+                break;
+            }
         }
 
     }
