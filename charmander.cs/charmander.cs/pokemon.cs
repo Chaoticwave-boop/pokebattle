@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace poke
 {
-    internal class pokemon
+    internal class Pokemon
     {
         public string name = "charmander";
         public string type = "fire";
         public string weakness = "water";
-        public string pokename;
+        public string pokename = "alex";
 
-        public pokemon() { }
+        public Pokemon() { }
 
-        public pokemon(string name, string type, string weakness, string pokename)
+        public Pokemon(string name, string type, string weakness, string pokename)
         {
             this.name = name;
             this.type = type;
@@ -24,22 +24,35 @@ namespace poke
         }
     }
 
-    internal class pokeball
+    internal class Pokeball
     {
         public string name = "Pokeball";
-        public string pokename = "";
-        public string content = "charmander";
-        public bool open = false
-        
-        public pokeball() { }
+        public Pokemon pokemon;
+        public Pokeball() { }
 
-        public pokeball(string name,string pokename ,string content, bool open)
+        public Pokeball(string name, Pokemon pokemon)
         {
             this.name = name;
-            this.pokename = pokename;
-            this.content= content;
-            this.open = open;
-           
+            this.pokemon = pokemon;
+        }
+    }
+
+    internal class Trainer
+    {
+        public string name = "Trainer";
+        public List<Pokeball> belt;
+
+        public Trainer() { }
+
+        public Trainer(string name, List<Pokeball> belt)
+        {
+            this.name = name;
+            this.belt = belt;
+        }
+
+        public List<Pokeball> getBelt()
+        {
+            return belt;
         }
     }
 

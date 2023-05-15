@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brens\\source\\repos\\charmander.cs\\charmander.cs\\charmander.csproj": {}
+    "C:\\Users\\brens\\source\\repos\\pokebattle\\charmander.cs\\charmander.cs\\charmander.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brens\\source\\repos\\charmander.cs\\charmander.cs\\charmander.csproj": {
+    "C:\\Users\\brens\\source\\repos\\pokebattle\\charmander.cs\\charmander.cs\\charmander.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brens\\source\\repos\\charmander.cs\\charmander.cs\\charmander.csproj",
+        "projectUniqueName": "C:\\Users\\brens\\source\\repos\\pokebattle\\charmander.cs\\charmander.cs\\charmander.csproj",
         "projectName": "charmander",
-        "projectPath": "C:\\Users\\brens\\source\\repos\\charmander.cs\\charmander.cs\\charmander.csproj",
+        "projectPath": "C:\\Users\\brens\\source\\repos\\pokebattle\\charmander.cs\\charmander.cs\\charmander.csproj",
         "packagesPath": "C:\\Users\\brens\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brens\\source\\repos\\charmander.cs\\charmander.cs\\obj\\",
+        "outputPath": "C:\\Users\\brens\\source\\repos\\pokebattle\\charmander.cs\\charmander.cs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\brens\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -10,33 +10,59 @@ class main
 
         while (gamestart)
         {
+            Console.WriteLine("enter your name");
+            string UserName = Console.ReadLine();
 
-            pokemon bulbasaur = new pokemon("bulbasaur", "grass", "fire", "");
 
-            Console.WriteLine("enter your charmanders name");
-            string Pokename = Console.ReadLine();
+            Console.WriteLine("enter your rivals name");
+            string Rivalname = Console.ReadLine();
 
-            pokemon charmander = new pokemon("charmander", "fire", "water", Pokename);
 
-            Console.WriteLine("pokename: " + charmander.pokename);
-            Console.WriteLine("name: " + charmander.name);
-            Console.WriteLine("type: " + charmander.type);
-            Console.WriteLine("weakness: " + charmander.weakness);
-
-            Console.WriteLine("---------");
-
-            for (int i = 0; i < 10; i++)
+            if (Rivalname == "exit" + "" || UserName == "exit" + "")
             {
-                Console.WriteLine((i + 1) + "--" + charmander.pokename);
+                break;
+            }
+
+            List<Pokeball> UserContent = new List<Pokeball>() {
+                  new Pokeball("ultraball", new Pokemon("Umbreon", "dark", "fighting", "Grim")),
+                  new Pokeball("greatball", new Pokemon("Gengar", "ghost", "dark", "JackTheRipper")),
+                  new Pokeball("pokeball",  new Pokemon("Mimikyu", "ghost", "dark", "fakePickachu")),
+                  new Pokeball("greatball", new Pokemon("Ditto", "normal", "fighting", "Changeling")),
+                  new Pokeball("ultraball", new Pokemon("Darkrai", "dark", "fighting", "Edgy")),
+                  new Pokeball("ultraball", new Pokemon("Zoruark", "dark", "fighting", "bigWoof")),
             };
 
 
-            if (Pokename == "exit") {
-                break;
-            }
-        }
+            List<Pokeball> RivalContent = new List<Pokeball>() {
+                  new Pokeball("ultraball", new Pokemon("charmander", "fire", "grass", "steve")),
+                  new Pokeball("greatball", new Pokemon("charmeleon", "fire", "grass", "damian")),
+                  new Pokeball("pokeball",  new Pokemon("Charizard", "fire", "grass", "sith")),
+                  new Pokeball("greatball", new Pokemon("torchick", "fire", "grass", "Nugget")),
+                  new Pokeball("ultraball", new Pokemon("combusken", "fire", "grass", "drumstick")),
+                  new Pokeball("ultraball", new Pokemon("blaziken", "fire", "grass", "rotisserie")),
+            };
 
-       
+            Trainer Rival = new Trainer(Rivalname, RivalContent);
+            Trainer User = new Trainer(UserName, UserContent);
+
+
+            for (int i = 0; i < RivalContent.Count; i++)
+            {
+                Thread.Sleep(2000);
+                Console.WriteLine(Rivalname + " released " + Rival.belt[i].pokemon.name);
+                Thread.Sleep(1000);
+                Console.WriteLine(UserName + " released " + User.belt[i].pokemon.name);
+                Thread.Sleep(1000);
+                Console.WriteLine(Rival.belt[i].pokemon.name + " !!");
+                Thread.Sleep(1000);
+                Console.WriteLine(User.belt[i].pokemon.name + " !!");
+                Thread.Sleep(2000);
+                Console.WriteLine(Rivalname + " withdrew " + Rival.belt[i].pokemon.name);
+                Thread.Sleep(1000);
+                Console.WriteLine(UserName + " withdrew " + User.belt[i].pokemon.name);
+            }
+
+        }
 
     }
 }
