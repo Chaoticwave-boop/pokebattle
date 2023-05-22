@@ -18,22 +18,22 @@ class main
             string Rivalname = Console.ReadLine();
 
             List<Pokeball> UserContent = new List<Pokeball>() {
-                  new Pokeball("ultraball", new Pokemon("Umbreon", "dark", "fighting", "Grim")),
-                  new Pokeball("greatball", new Pokemon("Gengar", "ghost", "dark", "JackTheRipper")),
-                  new Pokeball("pokeball",  new Pokemon("Mimikyu", "ghost", "dark", "fakePickachu")),
-                  new Pokeball("greatball", new Pokemon("Ditto", "normal", "fighting", "Changeling")),
-                  new Pokeball("ultraball", new Pokemon("Darkrai", "dark", "fighting", "Edgy")),
-                  new Pokeball("ultraball", new Pokemon("Zoruark", "dark", "fighting", "bigWoof")),
+                  new Pokeball("ultraball", new Charmander("Charmander")),
+                  new Pokeball("ultraball", new Charmander("Charmander")),
+                  new Pokeball("ultraball", new Bulbasaur("Bulbasaur")),
+                  new Pokeball("ultraball", new Charmander("Charmander")),
+                  new Pokeball("ultraball", new Charmander("Charmander")),
+                  new Pokeball("ultraball", new Squirtle("Squirtle")),
             };
 
 
             List<Pokeball> RivalContent = new List<Pokeball>() {
-                  new Pokeball("ultraball", new Pokemon("charmander", "fire", "water", "steve")),
-                  new Pokeball("greatball", new Pokemon("charmeleon", "fire", "water", "damian")),
-                  new Pokeball("pokeball",  new Pokemon("Charizard", "fire", "water", "sith")),
-                  new Pokeball("greatball", new Pokemon("torchick", "fire", "water", "Nugget")),
-                  new Pokeball("ultraball", new Pokemon("combusken", "fire", "water", "drumstick")),
-                  new Pokeball("ultraball", new Pokemon("blaziken", "fire", "water", "rotisserie")),
+                  new Pokeball("ultraball", new Bulbasaur("Bulbasaur")),
+                  new Pokeball("ultraball", new Squirtle("Squirtle")),
+                  new Pokeball("ultraball", new Bulbasaur("Bulbasaur")),
+                  new Pokeball("ultraball", new Charmander("Charmander")),
+                  new Pokeball("ultraball", new Bulbasaur("Bulbasaur")),
+                  new Pokeball("ultraball", new Squirtle("Squirtle")),
             };
 
             Trainer Rival = new Trainer(Rivalname, RivalContent);

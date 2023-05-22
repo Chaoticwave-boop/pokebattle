@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace poke
 {
-    internal class Pokemon
+    internal abstract class Pokemon
     {
         public string name = "charmander";
         public string type = "fire";
@@ -22,7 +22,37 @@ namespace poke
             this.weakness = weakness;
             this.pokename = pokename;
         }
+        public abstract void Scream();
     }
+
+
+    internal class Charmander : Pokemon { 
+        public Charmander(string name) : base(name, "Fire", "Water", "Charmander") { }
+        public override void Scream()
+        {
+            Console.WriteLine("Charmander!");
+        }
+    }
+
+
+    internal class Squirtle : Pokemon
+    {
+        public Squirtle(string name) : base(name, "Fire", "Water", "Charmander") { }
+        public override void Scream()
+        {
+            Console.WriteLine("Squirtle!");
+        }
+    }
+
+    internal class Bulbasaur : Pokemon
+    {
+        public Bulbasaur(string name) : base(name, "Fire", "Water", "Charmander") { }
+        public override void Scream()
+        {
+            Console.WriteLine(" Bulbasaur!");
+        }
+    }
+
 
     internal class Pokeball
     {
