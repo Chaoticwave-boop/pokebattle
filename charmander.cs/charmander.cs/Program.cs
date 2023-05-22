@@ -19,7 +19,7 @@ class main
 
             List<Pokeball> UserContent = new List<Pokeball>() {
                   new Pokeball("ultraball", new Charmander("Charmander")),
-                  new Pokeball("ultraball", new Charmander("Charmander")),
+                  new Pokeball("ultraball", new Squirtle("Squirtle")),
                   new Pokeball("ultraball", new Bulbasaur("Bulbasaur")),
                   new Pokeball("ultraball", new Charmander("Charmander")),
                   new Pokeball("ultraball", new Charmander("Charmander")),

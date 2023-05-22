@@ -27,7 +27,7 @@ namespace poke
 
 
     internal class Charmander : Pokemon { 
-        public Charmander(string name) : base(name, "Fire", "Water", "Charmander") { }
+        public Charmander(string name,string pokename) : base(name, "Fire", "Water", pokename) { }
         public override void Scream()
         {
             Console.WriteLine("Charmander!");
@@ -37,7 +37,7 @@ namespace poke
 
     internal class Squirtle : Pokemon
     {
-        public Squirtle(string name) : base(name, "Fire", "Water", "Charmander") { }
+        public Squirtle(string name, string pokename) : base(name, "Water", "Grass", pokename) { }
         public override void Scream()
         {
             Console.WriteLine("Squirtle!");
@@ -46,7 +46,7 @@ namespace poke
 
     internal class Bulbasaur : Pokemon
     {
-        public Bulbasaur(string name) : base(name, "Fire", "Water", "Charmander") { }
+        public Bulbasaur(string name, string pokename) : base(name, "Grass", "Fire", pokename) { }
         public override void Scream()
         {
             Console.WriteLine(" Bulbasaur!");
