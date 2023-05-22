@@ -86,4 +86,9 @@ namespace poke
         }
     }
 
+    internal abstract class Arena
+    {
+       
+    }
+
 }
