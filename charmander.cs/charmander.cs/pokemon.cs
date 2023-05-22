@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace poke
 {
-    internal abstract class Pokemon
+    public abstract class Pokemon
     {
         public string name = "charmander";
         public string type = "fire";
@@ -26,8 +26,8 @@ namespace poke
     }
 
 
-    internal class Charmander : Pokemon { 
-        public Charmander(string name,string pokename) : base(name, "Fire", "Water", pokename) { }
+    public class Charmander : Pokemon { 
+        public Charmander(String pokename) : base("Charmander", "Fire", "Water",pokename) { }
         public override void Scream()
         {
             Console.WriteLine("Charmander!");
@@ -35,60 +35,21 @@ namespace poke
     }
 
 
-    internal class Squirtle : Pokemon
+    public class Squirtle : Pokemon
     {
-        public Squirtle(string name, string pokename) : base(name, "Water", "Grass", pokename) { }
+        public Squirtle(String pokename) : base("Squirtle", "Water", "Grass", pokename) { }
         public override void Scream()
         {
             Console.WriteLine("Squirtle!");
         }
     }
 
-    internal class Bulbasaur : Pokemon
+    public class Bulbasaur : Pokemon
     {
-        public Bulbasaur(string name, string pokename) : base(name, "Grass", "Fire", pokename) { }
+        public Bulbasaur(String pokename) : base("Bulbasaur", "Grass", "Fire", pokename) { }
         public override void Scream()
         {
             Console.WriteLine(" Bulbasaur!");
         }
     }
-
-
-    internal class Pokeball
-    {
-        public string name = "Pokeball";
-        public Pokemon pokemon;
-        public Pokeball() { }
-
-        public Pokeball(string name, Pokemon pokemon)
-        {
-            this.name = name;
-            this.pokemon = pokemon;
-        }
-    }
-
-    internal class Trainer
-    {
-        public string name = "Trainer";
-        public List<Pokeball> belt;
-
-        public Trainer() { }
-
-        public Trainer(string name, List<Pokeball> belt)
-        {
-            this.name = name;
-            this.belt = belt;
-        }
-
-        public List<Pokeball> getBelt()
-        {
-            return belt;
-        }
-    }
-
-    internal abstract class Arena
-    {
-       
-    }
-
 }
