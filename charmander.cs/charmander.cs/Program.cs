@@ -39,6 +39,9 @@ class main
             Trainer Rival = new Trainer(Rivalname, RivalContent);
             Trainer User = new Trainer(UserName, UserContent);
 
+            Arena arena = new Arena(Rival, User);
+
+            arena.test();
 
             for (int i = 0; i < RivalContent.Count; i++)
             {
@@ -62,6 +65,11 @@ class main
             if (Continue == "no" + "" || Continue == "exit" + "")
             {
                 break;
+            }
+            else
+            {
+                Arena.rounds++;
+                Console.WriteLine("Rounds battled : " + Arena.rounds);
             }
         }
 
