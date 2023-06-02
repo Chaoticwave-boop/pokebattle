@@ -9,20 +9,29 @@ namespace poke
 {
     public class Trainer
     {
-        public string name = "Trainer";
-        public List<Pokeball> belt;
+        private string name = "Trainer";
+        private List<Pokeball> belt = new List<Pokeball>(6);
 
         public Trainer() { }
 
-        public Trainer(string name, List<Pokeball> belt)
+        public Trainer(string name)
         {
             this.name = name;
-            this.belt = belt;
         }
 
         public List<Pokeball> getBelt()
         {
             return belt;
+        }
+
+        public string getName()
+        {
+            return name;
+        }
+
+        public void AddPokemon(String pokeballtype, Pokemon pokemon)
+        {
+            this.belt.Add(new Pokeball("pokeball", pokemon));
         }
     }
 }

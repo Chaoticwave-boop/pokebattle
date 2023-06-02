@@ -14,11 +14,14 @@ namespace poke
         public string name = "Pokeball";
         public Pokemon pokemon;
        
-
         public Pokeball(string name, Pokemon pokemon)
         {
             this.name = name;
             this.pokemon = pokemon;
+        }
+        public Pokemon getPokemonInBall()
+        {
+            return this.pokemon;
         }
     }
 }
