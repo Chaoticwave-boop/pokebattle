@@ -32,13 +32,6 @@ namespace poke
             User.belt = User.belt.OrderBy(_ => rand.Next()).ToList();
             Rival.belt = Rival.belt.OrderBy(_ => rand.Next()).ToList();
 
-
-            for (int i = 0; i < User.belt.Count; i++)
-            {
-               //a
-               //Console.WriteLine(User.belt[i].pokemon.name);
-            }
-
             Battle battle = new Battle(Rival, User);
             battle.battle_results();
         }
