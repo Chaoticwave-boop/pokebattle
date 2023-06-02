@@ -35,7 +35,8 @@ namespace poke
 
             for (int i = 0; i < User.belt.Count; i++)
             {
-               // Console.WriteLine(User.belt[i].pokemon.name);
+               //a
+               //Console.WriteLine(User.belt[i].pokemon.name);
             }
 
             Battle battle = new Battle(Rival, User);

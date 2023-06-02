@@ -43,21 +43,21 @@ class main
 
             arena.test();
 
-            for (int i = 0; i < RivalContent.Count; i++)
-            {
-                Thread.Sleep(2000);
-                Console.WriteLine(Rivalname + " released " + Rival.belt[i].pokemon.name);
-                Thread.Sleep(1000);
-                Console.WriteLine(UserName + " released " + User.belt[i].pokemon.name);
-                Thread.Sleep(1000);
-                Console.WriteLine(Rival.belt[i].pokemon.name + " !!");
-                Thread.Sleep(1000);
-                Console.WriteLine(User.belt[i].pokemon.name + " !!");
-                Thread.Sleep(2000);
-                Console.WriteLine(Rivalname + " withdrew " + Rival.belt[i].pokemon.name);
-                Thread.Sleep(1000);
-                Console.WriteLine(UserName + " withdrew " + User.belt[i].pokemon.name);
-            }
+            //for (int i = 0; i < RivalContent.Count; i++)
+            //{
+               // Thread.Sleep(2000);
+               // Console.WriteLine(Rivalname + " released " + Rival.belt[i].pokemon.name);
+               // Thread.Sleep(1000);
+               // Console.WriteLine(UserName + " released " + User.belt[i].pokemon.name);
+               // Thread.Sleep(1000);
+              //  Console.WriteLine(Rival.belt[i].pokemon.name + " !!");
+               // Thread.Sleep(1000);
+               // Console.WriteLine(User.belt[i].pokemon.name + " !!");
+               // Thread.Sleep(2000);
+               // Console.WriteLine(Rivalname + " withdrew " + Rival.belt[i].pokemon.name);
+               //// Thread.Sleep(1000);
+              //  Console.WriteLine(UserName + " withdrew " + User.belt[i].pokemon.name);
+           // }
 
             Console.WriteLine("Play again? yes or no");
             string Continue = Console.ReadLine();
