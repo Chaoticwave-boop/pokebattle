@@ -11,8 +11,8 @@ namespace poke
     {
         public static int rounds;
 
-        public Trainer User;
-        public Trainer Rival;
+        private Trainer User;
+        private Trainer Rival;
         private List<Pokeball> UserBelt;
         private List<Pokeball> RivalBelt;
 
@@ -21,13 +21,10 @@ namespace poke
             this.User = User;
             this.Rival = Rival;     
         }
-      
 
+     
         public void test()
         {
-
-            Console.WriteLine(User.getBelt().Count);
-            Console.WriteLine(Rival.getBelt().Count);
 
             UserBelt = User.getBelt();
             RivalBelt = Rival.getBelt();
@@ -35,6 +32,9 @@ namespace poke
             Random rand = new Random();
             UserBelt = User.getBelt().OrderBy(_ => rand.Next()).ToList();
             RivalBelt = Rival.getBelt().OrderBy(_ => rand.Next()).ToList();
+
+            User.setBelt(UserBelt);
+            Rival.setBelt(RivalBelt);
 
             Battle battle = new Battle(Rival, User);
             battle.battle_results();

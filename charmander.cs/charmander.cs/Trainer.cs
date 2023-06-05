@@ -11,6 +11,7 @@ namespace poke
     {
         private string name = "Trainer";
         private List<Pokeball> belt = new List<Pokeball>(6);
+        private readonly int maxBelt = 6;
 
         public Trainer() { }
 
@@ -24,6 +25,10 @@ namespace poke
             return belt;
         }
 
+        public void setBelt(List<Pokeball> belt)
+        {
+            this.belt = belt;
+        }
         public string getName()
         {
             return name;
@@ -31,7 +36,15 @@ namespace poke
 
         public void AddPokemon(String pokeballtype, Pokemon pokemon)
         {
-            this.belt.Add(new Pokeball("pokeball", pokemon));
+            
+            if (this.belt.Count >= maxBelt)
+            {
+                throw new ArgumentException("you cant have more than 6 pokemon!");
+            }
+            else
+            {
+                this.belt.Add(new Pokeball("pokeball", pokemon));
+            }
         }
     }
 }

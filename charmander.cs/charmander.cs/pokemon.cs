@@ -15,11 +15,11 @@ namespace poke
             Fire,
             Water
         }
-
-        public string name = "charmander";
-        public Type type;
-        public Type weakness;
-        public string pokename = "alex";
+        
+        private string name; 
+        private Type type;
+        private Type weakness;
+        private string pokename = "alex";
 
         public Pokemon() { }
 

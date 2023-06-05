@@ -19,15 +19,27 @@ class main
             Trainer Rival = new Trainer(Rivalname);
             Trainer User = new Trainer(UserName);
 
-            User.AddPokemon("pokeball", new Bulbasaur("Bulbasaur"));
-            User.AddPokemon("pokeball", new Charmander("Charmander"));
-            User.AddPokemon("pokeball", new Squirtle("Squirtle"));
-            User.AddPokemon("pokeball", new Charmander("Charmander"));
+            // try / catch -> argumentexception
+            try
+            {
+                User.AddPokemon("pokeball", new Bulbasaur("Bulbasaur"));
+                User.AddPokemon("pokeball", new Charmander("Charmander"));
+                User.AddPokemon("pokeball", new Squirtle("Squirtle"));
+                User.AddPokemon("pokeball", new Charmander("Charmander"));
+                User.AddPokemon("pokeball", new Squirtle("Squirtle"));
 
-            Rival.AddPokemon("pokeball", new Bulbasaur("Bulbasaur"));
-            Rival.AddPokemon("pokeball", new Charmander("Charmander"));
-            Rival.AddPokemon("pokeball", new Squirtle("Squirtle"));
-            Rival.AddPokemon("pokeball", new Bulbasaur("Bulbasaur"));
+
+                Rival.AddPokemon("pokeball", new Bulbasaur("Bulbasaur"));
+                Rival.AddPokemon("pokeball", new Charmander("Charmander"));
+                Rival.AddPokemon("pokeball", new Squirtle("Squirtle"));
+                Rival.AddPokemon("pokeball", new Charmander("Bulbasaur"));
+                Rival.AddPokemon("pokeball", new Bulbasaur("Bulbasaur"));
+            }
+            catch (Exception e)
+            {
+                throw new ArgumentException("there is error!");
+            }
+
 
             Arena arena = new Arena(Rival, User);
 

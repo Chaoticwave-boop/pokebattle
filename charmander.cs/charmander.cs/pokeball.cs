@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 namespace poke
 {
 
-    public class Pokeball
+    public sealed class Pokeball
     {
     
         public string name = "Pokeball";
-        public Pokemon pokemon;
+        private readonly Pokemon pokemon;
        
         public Pokeball(string name, Pokemon pokemon)
         {
