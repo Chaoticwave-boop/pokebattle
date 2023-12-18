@@ -50,12 +50,15 @@ class main
 
             if (Continue == "no" + "" || Continue == "exit" + "")
             {
+                Console.WriteLine("Battles battled: " + Arena.getBattleCount());
+                Console.WriteLine("Rounds battled : " + Arena.getRoundCount());
                 break;
             }
             else
             {
-                Arena.rounds++;
-                Console.WriteLine("Rounds battled : " + Arena.rounds);
+
+                Console.WriteLine("Battles battled: " + Arena.getBattleCount());
+                Console.WriteLine("Rounds battled : " + Arena.getRoundCount());
             }
         }
 

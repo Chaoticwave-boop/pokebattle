@@ -13,6 +13,7 @@ namespace poke
     
         public string name = "Pokeball";
         private readonly Pokemon pokemon;
+        private bool isOpen;
        
         public Pokeball(string name, Pokemon pokemon)
         {
@@ -21,7 +22,25 @@ namespace poke
         }
         public Pokemon getPokemonInBall()
         {
+            // maybe add here the if statement for it he ball is closed or not
             return this.pokemon;
         }
+
+        public string OpenBall()
+        {
+            this.isOpen = true;
+            return $"released {this.pokemon.getName()}";
+        }
+        public string CloseBall()
+        {
+            this.isOpen = false;
+            return $"returns {this.pokemon.getName()}";
+        }
+        // method open
+            // releases pokemon
+            // check if pokeball is empty or not
+        // method close
+            // return pokemon
+
     }
 }

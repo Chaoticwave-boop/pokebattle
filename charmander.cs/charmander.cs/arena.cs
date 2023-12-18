@@ -9,7 +9,9 @@ namespace poke
 {
     public class Arena
     {
-        public static int rounds;
+        private static int rounds;
+        private static int battle;
+
 
         private Trainer User;
         private Trainer Rival;
@@ -22,7 +24,26 @@ namespace poke
             this.Rival = Rival;     
         }
 
-     
+        public static void increaseRoundCount()
+        {
+            Arena.rounds++;
+        }
+        public static int  getRoundCount()
+        {
+            return Arena.rounds;
+        }
+
+        public static void increaseBattleCount()
+        {
+            Arena.battle++;
+        }
+        public static int getBattleCount ()
+        {
+            return Arena.battle;
+        }
+
+
+
         public void test()
         {
 
@@ -38,6 +59,8 @@ namespace poke
 
             Battle battle = new Battle(Rival, User);
             battle.battle_results();
+            Arena.increaseRoundCount();
+
         }
     }
 }

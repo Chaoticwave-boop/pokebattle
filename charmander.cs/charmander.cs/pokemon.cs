@@ -17,8 +17,8 @@ namespace poke
         }
         
         private string name; 
-        private Type type;
-        private Type weakness;
+        private readonly Type type;
+        private readonly Type weakness;
         private string pokename = "alex";
 
         public Pokemon() { }
@@ -44,19 +44,13 @@ namespace poke
         {
             return weakness;
         }
-        public void setWeakness(Type weakness)
-        {
-            this.weakness = weakness;
-        }
+    
 
         public Type getType() {
             return type;
         }
 
-        public void setType(Type type)
-        {
-            this.type = type;
-        }
+    
     }
 
 

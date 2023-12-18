@@ -46,5 +46,6 @@ namespace poke
                 this.belt.Add(new Pokeball("pokeball", pokemon));
             }
         }
+
     }
 }
