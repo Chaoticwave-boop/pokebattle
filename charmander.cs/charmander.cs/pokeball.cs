@@ -11,7 +11,7 @@ namespace poke
     public sealed class Pokeball
     {
     
-        public string name = "Pokeball";
+        public readonly string name = "Pokeball";
         private readonly Pokemon pokemon;
         private bool isOpen;
        

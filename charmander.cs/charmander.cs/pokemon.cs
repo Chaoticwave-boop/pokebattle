@@ -16,7 +16,7 @@ namespace poke
             Water
         }
         
-        private string name; 
+        private string name;  // this name still changes so its not a readonly 
         private readonly Type type;
         private readonly Type weakness;
         private string pokename = "alex";
